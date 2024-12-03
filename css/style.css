@@ -1,0 +1,420 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo del cuerpo (body) */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Encabezado */
+header {
+    text-align: center;
+    background-color: #222;
+    color: #fff;
+    padding: 20px 0;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-style: italic;
+    font-size: 1.2rem;
+}
+
+header img {
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+/* Menú de navegación */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #f0a500;
+}
+
+/* Secciones */
+section {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+/* Títulos de sección */
+h2 {
+    margin-bottom: 10px;
+    font-size: 2rem;
+    color: #444;
+    border-bottom: 2px solid #f0a500;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+/* Imágenes */
+img {
+    margin: 10px;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+img:hover {
+    transform: scale(1.05);
+}
+
+/* Videos */
+.videos {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+/* Formulario */
+form {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form input[type="text"],
+form input[type="email"] {
+    width: 80%;
+    max-width: 400px;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form input[type="submit"] {
+    background-color: #f0a500;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+form input[type="submit"]:hover {
+    background-color: #e08900;
+}
+
+/* Galería de imágenes */
+#galeria img {
+    width: 200px;
+    height: auto;
+}
+
+/* Pie de página */
+footer {
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #222;
+    color: #fff;
+}
+/* Estilo para la sección de redes sociales */
+#redes-sociales {
+    text-align: center;
+    margin: 50px 0;
+}
+/* Estilo general para la sección de redes sociales */
+#redes-sociales {
+    text-align: center;
+    margin: 50px 0;
+    background-color: #f5f5f5;
+    padding: 30px 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#redes-sociales h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Contenedor de los íconos en fila */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+/* Estilo para los enlaces de los íconos */
+.social-icons a {
+    display: inline-block;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Tamaño y estilo de los íconos */
+.social-icons img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%; /* Borde redondo */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+    transition: transform 0.3s ease;
+}
+
+/* Efecto hover para los íconos */
+.social-icons a:hover {
+    transform: scale(1.2); /* Aumenta tamaño al pasar el ratón */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra más intensa */
+}
+/* Media Querys */
+
+/* Pantallas pequeñas (hasta 480px) */
+@media (max-width: 480px) {
+    /* Encabezado */
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    /* Menú de navegación */
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    /* Redes sociales */
+    .social-icons img {
+        width: 40px;
+        height: 40px;
+    }
+
+    /* Formulario */
+    form input[type="text"],
+    form input[type="email"] {
+        width: 100%;
+    }
+}
+
+/* Pantallas medianas (hasta 768px) */
+@media (max-width: 768px) {
+    /* Títulos de sección */
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    /* Galería de imágenes */
+    #galeria img {
+        width: 80%;
+        max-width: 150px;
+    }
+
+    /* Formulario */
+    form input[type="text"],
+    form input[type="email"] {
+        width: 90%;
+    }
+
+    /* Redes sociales */
+    .social-icons img {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+/* Pantallas grandes (hasta 1024px) */
+@media (max-width: 1024px) {
+    /* Encabezado */
+    header {
+        padding: 15px 0;
+    }
+
+    /* Galería de imágenes */
+    #galeria img {
+        max-width: 180px;
+    }
+
+    /* Redes sociales */
+    .social-icons img {
+        width: 55px;
+        height: 55px;
+    }
+
+    /* Menú de navegación */
+    nav ul li {
+        margin: 0 10px;
+    }
+}
+
+/* Pantallas extra grandes (desde 1200px en adelante) */
+@media (min-width: 1200px) {
+    /* Encabezado */
+    header h1 {
+        font-size: 3.5rem;
+    }
+
+    /* Formulario */
+    form input[type="text"],
+    form input[type="email"] {
+        max-width: 500px;
+    }
+
+    /* Menú de navegación */
+    nav ul li {
+        margin: 0 20px;
+    }
+
+    /* Redes sociales */
+    .social-icons img {
+        width: 60px;
+        height: 60px;
+    }
+}
+/* Media Queries adicionales */
+
+/* Pantallas muy pequeñas (hasta 360px) */
+@media (max-width: 360px) {
+    /* Texto y tamaño de encabezado */
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    header p {
+        font-size: 1rem;
+    }
+
+    /* Imágenes de redes sociales */
+    .social-icons img {
+        width: 35px;
+        height: 35px;
+    }
+
+    /* Galería */
+    #galeria img {
+        width: 100%;
+        margin: 5px 0;
+    }
+}
+
+/* Pantallas pequeñas (hasta 600px) */
+@media (max-width: 600px) {
+    /* Sección de títulos */
+    h2 {
+        font-size: 1.4rem;
+    }
+
+    /* Ajuste de formulario */
+    form {
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    form input[type="text"],
+    form input[type="email"] {
+        width: 95%;
+    }
+
+    /* Redes sociales: reorganización en columna */
+    .social-icons {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    /* Ajuste de espaciado en pie de página */
+    footer {
+        padding: 15px;
+    }
+}
+
+body {
+    background: linear-gradient(135deg, #e46a7a, #c397d8); /* Degradado diagonal */
+    color: #fff; /* Ajusta el color del texto para el contraste */
+    font-family: 'Roboto', sans-serif;
+}
+.video-background {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    padding: 20px;
+}
+.carousel {
+    position: relative;
+    width: 80%;
+    max-width: 800px;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slides img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.button-container {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.animated-button {
+    background-color: #f0a500;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.animated-button:hover {
+    background-color: #e08900;
+    transform: scale(1.1);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
